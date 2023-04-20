@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>9*9乘法表</h1> -->
+</body>
+<script>
+    // for(let i=1; i<=9; i++){
+    //     for(let j=1; j<=i; j++){
+    //         document.write ( j + "*" + i + "=" + j * i +"&nbsp;&nbsp") ;
+    //     }
+    //     document.write("<br>");
+    // }
+    let arr = ["cotton", "polyester", "linen", "alpaca"];
+    
+    console.log(arr);
+    console.log(arr.indexOf("polyester"));
+    let polyesterIndex = arr.indexOf("polyester");
+    arr.splice(polyesterIndex,0, "woo");
+    
+    arr.sort();console.log(arr);
+
+    let str = "This is a test that has to be done using Javascript";
+    console.log(str);
+    let split = str.split(" ");
+    console.log(split);
+    let str2 = "";
+    for(let i = split.length-1; i > -1; i--){
+        str2 =  split[i] + " " + str2;
+        
+    }
+    console.log(str2);
+</script>
+</html>
